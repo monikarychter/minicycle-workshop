@@ -2,7 +2,7 @@
 outside = {'e': 'cave', 'n': 'heaven', 's': 'hole', 'w': 'sea'}
 cave = {'w':'outside', 'e':'east_corridor', 's': 'south_corridor'}
 heaven = {'s': "outside", 'n': 'hell'}
-str_dict = {'l_outside': outside, "l_cave": cave, "l_heaven": heaven}
+str_dict = {'outside': outside, "cave": cave, "heaven": heaven}
 
 player = {
     'room': 'outside',
@@ -44,7 +44,7 @@ rooms = {
 }
 
 def main():
-    current_location = "l_outside"
+    current_location = "outside"
     describe_room()
     playing = True
     while playing:
