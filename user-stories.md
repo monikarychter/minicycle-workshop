@@ -110,10 +110,7 @@ Hint: You can either have a separate prompt for the item (`"Get what? "`), or ex
 <summary>Example</summary>
 
 ```
-Outside
-
-You're standing outside a large cave.
-There are items on the floor: key
+Outside 
 
 > get
 Get what? key

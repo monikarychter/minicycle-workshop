@@ -7,12 +7,16 @@ player = {
 rooms = {
     "outside": {
         "title": "Outside",
-        "description": "You are standing outside of a huge cave entrance.",
+        "description": "You are standing outside of a huge cave entrance on the East. Up North there is a ladder",
     },
     "cave": {
         "title": "Cave",
         "description": "You're in a cave.",
     },
+    "heaven":{
+        "title": "Heaven",
+        "description": "You see GOD. Wow"
+    }
 }
 
 
@@ -26,6 +30,12 @@ def main():
         elif command in ['quit', 'q']:
             print('Bye!')
             playing = False
+        elif command in ['East', 'e']:
+           player['room']= 'cave'
+           describe_room()
+        elif command in ["North", 'n']:
+            player['room']= 'heaven'
+            describe_room()
         else:
             print(f'Unrecognized command: {command}')
 
