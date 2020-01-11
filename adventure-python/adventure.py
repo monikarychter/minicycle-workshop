@@ -2,7 +2,11 @@
 outside = {'e': 'cave', 'n': 'heaven', 's': 'hole', 'w': 'sea'}
 cave = {'w':'outside', 'e':'east_corridor', 's': 'south_corridor'}
 heaven = {'s': "outside", 'n': 'hell'}
-str_dict = {'outside': outside, "cave": cave, "heaven": heaven}
+east_corridor = {'w': 'cave'}
+south_corridor = {'n': 'cave'}
+hell = {'s': 'heaven'}
+str_dict = {'outside': outside, "cave": cave, "heaven": heaven, 
+'hell':hell, 'east_corridor':east_corridor, 'south_corridor': south_corridor}
 
 player = {
     'room': 'outside',
