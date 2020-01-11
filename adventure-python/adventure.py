@@ -1,17 +1,20 @@
-
+# dictionaries discribing exits
 outside = {'e': 'cave', 'n': 'heaven', 's': 'hole', 'w': 'sea'}
 cave = {'w':'outside', 'e':'east_corridor', 's': 'south_corridor'}
 heaven = {'s': "outside", 'n': 'hell'}
 east_corridor = {'w': 'cave'}
 south_corridor = {'n': 'cave'}
 hell = {'s': 'heaven'}
+sea = { 'e': 'outside'}
+# dictionary transforming current location to relevant dict
 str_dict = {'outside': outside, "cave": cave, "heaven": heaven, 
-'hell':hell, 'east_corridor':east_corridor, 'south_corridor': south_corridor}
-
+'hell':hell, 'east_corridor':east_corridor,
+ 'south_corridor': south_corridor, 'sea': sea}
+# dictionary describing location of player and for ex inventory
 player = {
     'room': 'outside',
 }
-
+# dictionary discribing location
 rooms = {
     "outside": {
         "title": "Outside",
